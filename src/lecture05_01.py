@@ -16,11 +16,11 @@ def lecture05_01():
     # 画像をローカル変数に保存
     google_img: cv2.Mat = cv2.imread('images/google.png')
     if google_img is None:
-        raise FileNotFoundError("❌ google.png が見つかりません。パスまたはファイル名を確認してください。")
+        raise FileNotFoundError("google.png が見つかりません。パスまたはファイル名を確認してください。")
 
     capture_img: cv2.Mat = cv2.imread('images/camera_capture.png')  # 動作テスト用
     if capture_img is None:
-        raise FileNotFoundError("❌ camera_capture.png が見つかりません。出力フォルダを確認してください。")
+        raise FileNotFoundError("camera_capture.png が見つかりません。出力フォルダを確認してください。")
 
 
     g_hight, g_width, g_channel = google_img.shape
